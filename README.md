@@ -8,18 +8,15 @@ This program requires an ARM64 system to run. You will need an assembly language
 
 Following are the steps:
 
-Compile the assembly file using GNU Assembler (as):
+Compile the assembly file using GNU Assembler (as): as -o xor.o xor.s
 
-as -o xor.o xor.s
-//***************************************************
-Link the object file to create the final executable:
 
-ld -o xor xor.o
-//***************************************************
-Run the executable:
+Link the object file to create the final executable: ld -o xor xor.o
 
-./xor
-//***************************************************
+
+Run the executable: ./xor
+
+
 Code Breakdown:
 The program is divided into several sections, such as the data section, bss section (uninitialized data), and the text section (where the actual code resides).
 
